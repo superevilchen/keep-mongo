@@ -18,59 +18,26 @@ public class MongoTemplateImpl {
 
     private final MongoTemplate mongoTemplate;
 
-    public void discardTask(String taskID, String userID){
-
-        //TODO - possible to write shorter code here
+    public void changeTaskStatus(String taskID, String userID, String field, boolean fieldStatus){
 
         Query query = new Query();
         query.addCriteria(Criteria.where("_id").is(taskID).and("user.id").is(userID));
         Update update = new Update();
-        update.set("isDiscarded", true);
+        update.set(field, fieldStatus);
 
         mongoTemplate.findAndModify(query, update, Task.class);
     }
 
-    public void archiveTask(String taskID, String userID){
-
+    public List<Task> getAllPerField(String userID, boolean fieldStatus ,String field){
         Query query = new Query();
-        query.addCriteria(Criteria.where("_id").is(taskID).and("user.id").is(userID));
-        Update update = new Update();
-        update.set("isArchived", true);
-
-        mongoTemplate.findAndModify(query, update, Task.class);
-    }
-
-    public List<Task> sortFromNearest(String userID){
-
-        //TODO - and here shorter
-
-        Query query = new Query();
-        query.addCriteria(Criteria.where("user.id").is(userID));
-        query.with(Sort.by(Sort.Direction.ASC, "dueDate"));
+        query.addCriteria(Criteria.where(field).is(fieldStatus).and("user.id").is(userID));
         return mongoTemplate.find(query, Task.class);
     }
 
-    public List<Task> sortFromFarthest(String userID){
-
+    public List<Task> sort(String userID, Sort.Direction way, String field){
         Query query = new Query();
         query.addCriteria(Criteria.where("user.id").is(userID));
-        query.with(Sort.by(Sort.Direction.DESC, "dueDate"));
-        return mongoTemplate.find(query, Task.class);
-    }
-
-    public List<Task> sortFromOldToNew(String userID){
-
-        Query query = new Query();
-        query.addCriteria(Criteria.where("user.id").is(userID));
-        query.with(Sort.by(Sort.Direction.DESC, "addedAt"));
-        return mongoTemplate.find(query, Task.class);
-    }
-
-    public List<Task> sortFromNewToOld(String userID){
-
-        Query query = new Query();
-        query.addCriteria(Criteria.where("user.id").is(userID));
-        query.with(Sort.by(Sort.Direction.ASC, "addedAt"));
+        query.with(Sort.by(way, field));
         return mongoTemplate.find(query, Task.class);
     }
 

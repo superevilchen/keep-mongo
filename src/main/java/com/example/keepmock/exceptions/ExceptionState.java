@@ -1,5 +1,8 @@
 package com.example.keepmock.exceptions;
 
+import lombok.Getter;
+
+@Getter
 public enum ExceptionState {
 
     NOT_FOUND("couldn't get what you're looking for"),

@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public interface TaskService {
 
-    boolean login(String email, String password) throws CustomException;
+//    boolean login(String email, String password) throws CustomException;
     void addTask(Task task) throws CustomException;
     void updateTask(String taskID, Task task, String userID) throws CustomException;
     void deleteTask(String taskID) throws CustomException;

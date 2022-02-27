@@ -299,3 +299,183 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 2022-02-27 17:36:08.901  INFO 18095 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2022-02-27 17:36:08.913  INFO 18095 --- [main] c.example.keepmock.KeepmockApplication   : Started KeepmockApplication in 4.989 seconds (JVM running for 6.163)
 2022-02-27 17:36:09.280  INFO 18095 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:141}] to localhost:27017
+2022-02-27 17:39:43.566  INFO 18203 --- [main] c.example.keepmock.KeepmockApplication   : Starting KeepmockApplication using Java 11.0.12 on h-MBP-sl-Chen.lan with PID 18203 (/Users/chenvarsano/Downloads/keepmock/target/classes started by chenvarsano in /Users/chenvarsano/Downloads/keepmock)
+2022-02-27 17:39:43.570  INFO 18203 --- [main] c.example.keepmock.KeepmockApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-02-27 17:39:44.677  INFO 18203 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-02-27 17:39:44.747  INFO 18203 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 MongoDB repository interfaces.
+2022-02-27 17:39:45.535  INFO 18203 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 17:39:45.550  INFO 18203 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 17:39:45.551  INFO 18203 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-27 17:39:45.633  INFO 18203 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 17:39:45.634  INFO 18203 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1898 ms
+2022-02-27 17:39:45.870  INFO 18203 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-02-27 17:39:45.976  INFO 18203 --- [cluster-ClusterId{value='621b9b41785c6e1af1912af8', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:142}] to localhost:27017
+2022-02-27 17:39:45.976  INFO 18203 --- [cluster-rtt-ClusterId{value='621b9b41785c6e1af1912af8', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:143}] to localhost:27017
+2022-02-27 17:39:45.979  INFO 18203 --- [cluster-ClusterId{value='621b9b41785c6e1af1912af8', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=42421026}
+2022-02-27 17:39:46.809  INFO 18203 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 17:39:46.823  INFO 18203 --- [main] c.example.keepmock.KeepmockApplication   : Started KeepmockApplication in 4.644 seconds (JVM running for 5.596)
+2022-02-27 17:39:47.164  INFO 18203 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:144}] to localhost:27017
+2022-02-27 17:44:45.362  INFO 18258 --- [main] c.example.keepmock.KeepmockApplication   : Starting KeepmockApplication using Java 11.0.12 on h-MBP-sl-Chen.lan with PID 18258 (/Users/chenvarsano/Downloads/keepmock/target/classes started by chenvarsano in /Users/chenvarsano/Downloads/keepmock)
+2022-02-27 17:44:45.377  INFO 18258 --- [main] c.example.keepmock.KeepmockApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-02-27 17:44:46.705  INFO 18258 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-02-27 17:44:46.781  INFO 18258 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 MongoDB repository interfaces.
+2022-02-27 17:44:47.611  INFO 18258 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 17:44:47.628  INFO 18258 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 17:44:47.628  INFO 18258 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-27 17:44:47.733  INFO 18258 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 17:44:47.733  INFO 18258 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2242 ms
+2022-02-27 17:44:47.969  INFO 18258 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-02-27 17:44:48.087  INFO 18258 --- [cluster-ClusterId{value='621b9c6f3dbfa056b7c92c13', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:145}] to localhost:27017
+2022-02-27 17:44:48.087  INFO 18258 --- [cluster-rtt-ClusterId{value='621b9c6f3dbfa056b7c92c13', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:146}] to localhost:27017
+2022-02-27 17:44:48.089  INFO 18258 --- [cluster-ClusterId{value='621b9c6f3dbfa056b7c92c13', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=47863050}
+2022-02-27 17:44:48.529  WARN 18258 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reposTest' defined in file [/Users/chenvarsano/Downloads/keepmock/target/classes/com/example/keepmock/bootstrap/ReposTest.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskRepository' defined in com.example.keepmock.repos.TaskRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.example.keepmock.repos.TaskRepository.findByIsDiscardedisTrueAndUserId(java.lang.String)! Reason: No property 'isDiscardedis' found for type 'Task'! Did you mean ''isDiscarded''?; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property 'isDiscardedis' found for type 'Task'! Did you mean ''isDiscarded''?
+2022-02-27 17:44:48.542  INFO 18258 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-02-27 17:44:48.561  INFO 18258 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-27 17:44:48.592 ERROR 18258 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reposTest' defined in file [/Users/chenvarsano/Downloads/keepmock/target/classes/com/example/keepmock/bootstrap/ReposTest.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskRepository' defined in com.example.keepmock.repos.TaskRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.example.keepmock.repos.TaskRepository.findByIsDiscardedisTrueAndUserId(java.lang.String)! Reason: No property 'isDiscardedis' found for type 'Task'! Did you mean ''isDiscarded''?; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property 'isDiscardedis' found for type 'Task'! Did you mean ''isDiscarded''?
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.4.jar:2.6.4]
+	at com.example.keepmock.KeepmockApplication.main(KeepmockApplication.java:12) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskRepository' defined in com.example.keepmock.repos.TaskRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.example.keepmock.repos.TaskRepository.findByIsDiscardedisTrueAndUserId(java.lang.String)! Reason: No property 'isDiscardedis' found for type 'Task'! Did you mean ''isDiscarded''?; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property 'isDiscardedis' found for type 'Task'! Did you mean ''isDiscarded''?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.16.jar:5.3.16]
+	... 19 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.example.keepmock.repos.TaskRepository.findByIsDiscardedisTrueAndUserId(java.lang.String)! Reason: No property 'isDiscardedis' found for type 'Task'! Did you mean ''isDiscarded''?; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property 'isDiscardedis' found for type 'Task'! Did you mean ''isDiscarded''?
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:106) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:94) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[na:na]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1054) ~[na:na]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:96) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:86) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at java.base/java.util.Optional.map(Optional.java:265) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:86) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:364) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.util.Lazy.get(Lazy.java:114) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean.afterPropertiesSet(MongoRepositoryFactoryBean.java:119) ~[spring-data-mongodb-3.3.2.jar:3.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.16.jar:5.3.16]
+	... 30 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'isDiscardedis' found for type 'Task'! Did you mean ''isDiscarded''?
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:90) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:437) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:413) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:366) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:348) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:331) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:249) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:250) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:383) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:384) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:95) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	at org.springframework.data.mongodb.repository.query.PartTreeMongoQuery.<init>(PartTreeMongoQuery.java:67) ~[spring-data-mongodb-3.3.2.jar:3.3.2]
+	at org.springframework.data.mongodb.repository.support.MongoRepositoryFactory$MongoQueryLookupStrategy.resolveQuery(MongoRepositoryFactory.java:207) ~[spring-data-mongodb-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:102) ~[spring-data-commons-2.6.2.jar:2.6.2]
+	... 52 common frames omitted
+
+2022-02-27 17:45:13.152  INFO 18264 --- [main] c.example.keepmock.KeepmockApplication   : Starting KeepmockApplication using Java 11.0.12 on h-MBP-sl-Chen.lan with PID 18264 (/Users/chenvarsano/Downloads/keepmock/target/classes started by chenvarsano in /Users/chenvarsano/Downloads/keepmock)
+2022-02-27 17:45:13.178  INFO 18264 --- [main] c.example.keepmock.KeepmockApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-02-27 17:45:14.441  INFO 18264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-02-27 17:45:14.507  INFO 18264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 2 MongoDB repository interfaces.
+2022-02-27 17:45:15.290  INFO 18264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 17:45:15.305  INFO 18264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 17:45:15.305  INFO 18264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-27 17:45:15.428  INFO 18264 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 17:45:15.429  INFO 18264 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2000 ms
+2022-02-27 17:45:15.672  INFO 18264 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-02-27 17:45:15.791  INFO 18264 --- [cluster-rtt-ClusterId{value='621b9c8b6578e93b78703d5f', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:148}] to localhost:27017
+2022-02-27 17:45:15.791  INFO 18264 --- [cluster-ClusterId{value='621b9c8b6578e93b78703d5f', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:147}] to localhost:27017
+2022-02-27 17:45:15.794  INFO 18264 --- [cluster-ClusterId{value='621b9c8b6578e93b78703d5f', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=47454707}
+2022-02-27 17:45:16.818  INFO 18264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 17:45:16.831  INFO 18264 --- [main] c.example.keepmock.KeepmockApplication   : Started KeepmockApplication in 5.015 seconds (JVM running for 5.946)
+2022-02-27 17:45:17.163  INFO 18264 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:149}] to localhost:27017
+2022-02-27 17:47:35.732  INFO 18309 --- [main] c.example.keepmock.KeepmockApplication   : Starting KeepmockApplication using Java 11.0.12 on h-MBP-sl-Chen.lan with PID 18309 (/Users/chenvarsano/Downloads/keepmock/target/classes started by chenvarsano in /Users/chenvarsano/Downloads/keepmock)
+2022-02-27 17:47:35.740  INFO 18309 --- [main] c.example.keepmock.KeepmockApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-02-27 17:47:36.779  INFO 18309 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-02-27 17:47:36.836  INFO 18309 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 2 MongoDB repository interfaces.
+2022-02-27 17:47:37.695  INFO 18309 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 17:47:37.711  INFO 18309 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 17:47:37.711  INFO 18309 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-27 17:47:37.813  INFO 18309 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 17:47:37.813  INFO 18309 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1968 ms
+2022-02-27 17:47:38.044  INFO 18309 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-02-27 17:47:38.164  INFO 18309 --- [cluster-ClusterId{value='621b9d1a5c5cc00aff97dc4d', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:150}] to localhost:27017
+2022-02-27 17:47:38.164  INFO 18309 --- [cluster-rtt-ClusterId{value='621b9d1a5c5cc00aff97dc4d', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:151}] to localhost:27017
+2022-02-27 17:47:38.168  INFO 18309 --- [cluster-ClusterId{value='621b9d1a5c5cc00aff97dc4d', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=51021226}
+2022-02-27 17:47:39.088  INFO 18309 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 17:47:39.115  INFO 18309 --- [main] c.example.keepmock.KeepmockApplication   : Started KeepmockApplication in 4.786 seconds (JVM running for 5.667)
+2022-02-27 17:47:39.486  INFO 18309 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:152}] to localhost:27017
+2022-02-27 17:50:15.768  INFO 18344 --- [main] c.example.keepmock.KeepmockApplication   : Starting KeepmockApplication using Java 11.0.12 on h-MBP-sl-Chen.lan with PID 18344 (/Users/chenvarsano/Downloads/keepmock/target/classes started by chenvarsano in /Users/chenvarsano/Downloads/keepmock)
+2022-02-27 17:50:15.780  INFO 18344 --- [main] c.example.keepmock.KeepmockApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-02-27 17:50:16.911  INFO 18344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-02-27 17:50:16.986  INFO 18344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 MongoDB repository interfaces.
+2022-02-27 17:50:17.914  INFO 18344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 17:50:17.930  INFO 18344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 17:50:17.930  INFO 18344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-27 17:50:18.024  INFO 18344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 17:50:18.024  INFO 18344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2131 ms
+2022-02-27 17:50:18.262  INFO 18344 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-02-27 17:50:18.359  INFO 18344 --- [cluster-rtt-ClusterId{value='621b9dba56dd8004207123ab', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:154}] to localhost:27017
+2022-02-27 17:50:18.359  INFO 18344 --- [cluster-ClusterId{value='621b9dba56dd8004207123ab', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:153}] to localhost:27017
+2022-02-27 17:50:18.360  INFO 18344 --- [cluster-ClusterId{value='621b9dba56dd8004207123ab', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=30338602}
+2022-02-27 17:50:19.248  INFO 18344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 17:50:19.265  INFO 18344 --- [main] c.example.keepmock.KeepmockApplication   : Started KeepmockApplication in 4.985 seconds (JVM running for 5.806)
+2022-02-27 17:50:19.626  INFO 18344 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:155}] to localhost:27017
