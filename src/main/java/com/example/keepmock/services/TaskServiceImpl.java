@@ -59,7 +59,7 @@ public class TaskServiceImpl implements TaskService{
     }
 
     @Override
-    public void deleteTask(String taskID) throws Exception {
+    public void deleteTask(String taskID) throws CustomException {
 
         validate(taskRepository.existsById(taskID), () -> new CustomException(NOT_FOUND));
 
@@ -98,6 +98,14 @@ public class TaskServiceImpl implements TaskService{
         // validate fields
 
         validate(userRepository.existsById(userID), () -> new CustomException(NOT_FOUND));
+
+        validateMany(
+                List.of(field.equals("text") ||
+                        field.equals("addedAt") ||
+                        field.equals("updatedAt") ||
+                        field.equals("dueDate") ||
+                        field.equals("label")),
+                () -> new CustomException(INVALID_FIELD));
 
         if (isAsc){
             return mongoTemplateImpl.sort(userID, Sort.Direction.ASC, field);

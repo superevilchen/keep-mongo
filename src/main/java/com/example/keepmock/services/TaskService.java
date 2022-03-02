@@ -14,7 +14,7 @@ public interface TaskService {
 //    boolean login(String email, String password) throws CustomException;
     void addTask(Task task) throws CustomException;
     void updateTask(String taskID, Task task) throws CustomException;
-    void deleteTask(String taskID) throws Exception;
+    void deleteTask(String taskID) throws CustomException;
     void changeTaskStatus(String taskID, String field) throws CustomException;
     List<Task> getAllUserTasks(String userID) throws CustomException;
     Task getOneUserTask(String taskID) throws CustomException;

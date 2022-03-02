@@ -8,6 +8,9 @@ spring:
       port: 27017
       host: localhost
       auto-index-creation: true
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
 
 logging:
   file:
