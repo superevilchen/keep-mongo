@@ -9,14 +9,14 @@ import com.example.keepmock.repos.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 import static com.example.keepmock.exceptions.ExceptionState.*;
-import static com.example.keepmock.utils.ServiceUtils.validate;
-import static com.example.keepmock.utils.ServiceUtils.validateMany;
+import static com.example.keepmock.utils.ServiceUtils.*;
 
 @Service
 @RequiredArgsConstructor
@@ -36,21 +36,18 @@ public class TaskServiceImpl implements TaskService{
     @Override
     public void addTask(Task task) throws CustomException {
 
-        validate(!taskRepository.existsById(task.getId()), () -> new CustomException(ALREADY_EXISTS));
+        //TODO - validation fails because id is null
+
+        if (task.getId() != null){
+            validate(!taskRepository.existsById(task.getId()), () -> new CustomException(ALREADY_EXISTS));
+        }
 
         taskRepository.save(task);
     }
 
     @Override
-    @Transactional
+    @Transactional(value = "MONGO_TRANSACTION_MANAGER", propagation = Propagation.REQUIRED)
     public void updateTask(String taskID, Task task) throws CustomException {
-
-
-        // possible to create @transactional, or match with whats in db and not update in that case, or find solution in pojo
-        // validate:
-        // 1. exists
-        // 2. added date not change
-        // 3. user not change
 
         Task fromDB = taskRepository.findById(taskID).orElseThrow(() -> new CustomException(NOT_FOUND));
 
@@ -58,7 +55,7 @@ public class TaskServiceImpl implements TaskService{
         fromDB.setLabel(task.getLabel());
         fromDB.setPicture(task.getPicture());
 
-//        taskRepository.save(task);
+        taskRepository.save(task);
     }
 
     @Override
@@ -73,7 +70,7 @@ public class TaskServiceImpl implements TaskService{
     public void changeTaskStatus(String taskID, String field) throws CustomException {
 
         validate(taskRepository.existsById(taskID), () -> new CustomException(NOT_FOUND));
-        validate(field.equals("isArchived") || field.equals("isDiscarded"), () -> new CustomException(INVALID_FIELD));
+        validateField(field);
 
         mongoTemplateImpl.changeTaskStatus(taskID, field);
     }
@@ -98,6 +95,8 @@ public class TaskServiceImpl implements TaskService{
     // if false, desc
     public List<Task> sort(String userID, boolean isAsc, String field) throws CustomException {
 
+        // validate fields
+
         validate(userRepository.existsById(userID), () -> new CustomException(NOT_FOUND));
 
         if (isAsc){
@@ -110,7 +109,6 @@ public class TaskServiceImpl implements TaskService{
     @Override
     public List<Task> getAllBefore(LocalDateTime date, String userID) throws CustomException {
 
-        //validate date
         validate(userRepository.existsById(userID), () -> new CustomException(NOT_FOUND));
 
         return taskRepository.findByDueDateLessThanAndUserId(date, userID);
@@ -119,7 +117,6 @@ public class TaskServiceImpl implements TaskService{
     @Override
     public List<Task> getAllAfter(LocalDateTime date, String userID) throws CustomException {
 
-        // validate date
         validate(userRepository.existsById(userID), () -> new CustomException(NOT_FOUND));
 
         return taskRepository.findByDueDateGreaterThanAndUserId(date, userID);
@@ -129,6 +126,7 @@ public class TaskServiceImpl implements TaskService{
     public List<Task> getAllBetween(LocalDateTime start, LocalDateTime end, String userID) throws CustomException {
 
         validate(userRepository.existsById(userID), () -> new CustomException(NOT_FOUND));
+        validate(end.isAfter(start), () -> new CustomException(INVALID_DATE));
 
         // validate date
         return taskRepository.findByDueDateBetween(start, end);
@@ -138,6 +136,7 @@ public class TaskServiceImpl implements TaskService{
     public List<Task> getAllPerFieldStatus(String userID, boolean fieldStatus, String field) throws CustomException {
 
         validate(userRepository.existsById(userID), () -> new CustomException(NOT_FOUND));
+        validateField(field);
 
         return mongoTemplateImpl.getAllPerField(userID, fieldStatus, field);
     }
@@ -147,8 +146,10 @@ public class TaskServiceImpl implements TaskService{
 
         validateMany
                 (List.of(userRepository.existsById(userID),
-                         label.getLabelName() != null),
-                        () -> new CustomException(NOT_FOUND));
+                         label.getLabelName() != null,
+                         taskRepository.findByLabel(label).isPresent()),
+                         () -> new CustomException(NOT_FOUND));
+
         return taskRepository.findByLabelAndUserId(label, userID);
     }
 }

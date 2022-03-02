@@ -23,7 +23,7 @@ public class MongoTemplateImpl {
 
     private final MongoTemplate mongoTemplate;
 
-    @Transactional
+    @Transactional(value = "MONGO_TRANSACTION_MANAGER")
     public void changeTaskStatus(String taskID, String field){
 
         Task fromDB = mongoTemplate.findById(taskID, Task.class);
@@ -36,6 +36,8 @@ public class MongoTemplateImpl {
                 fromDB.setArchived(!fromDB.isArchived());
                 break;
         }
+
+        mongoTemplate.save(fromDB);
     }
 
     public List<Task> getAllPerField(String userID, boolean fieldStatus ,String field){

@@ -19,6 +19,8 @@ public interface TaskRepository extends MongoRepository<Task, String> {
 
     List<Task> findByDueDateBetween(LocalDateTime start, LocalDateTime end);
 
+    Optional<Label>findByLabel(Label label);
+
     List<Task> findByLabelAndUserId(Label label, String userID);
 
 }

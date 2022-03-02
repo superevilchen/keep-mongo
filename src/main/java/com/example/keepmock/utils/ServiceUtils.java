@@ -5,10 +5,12 @@ import com.example.keepmock.exceptions.CustomException;
 import java.util.List;
 import java.util.function.Supplier;
 
+import static com.example.keepmock.exceptions.ExceptionState.INVALID_FIELD;
+
 public class ServiceUtils {
 
-    public static void validate(boolean isExists, Supplier<CustomException> callback) throws CustomException {
-        if (!isExists) {
+    public static void validate(boolean condition, Supplier<CustomException> callback) throws CustomException {
+        if (!condition) {
             throw callback.get();
         }
     }
@@ -19,5 +21,9 @@ public class ServiceUtils {
                 throw callback.get();
             }
         }
+    }
+
+    public static void validateField(String field) throws CustomException {
+        validate(field.equals("isArchived") || field.equals("isDiscarded"), () -> new CustomException(INVALID_FIELD));
     }
 }

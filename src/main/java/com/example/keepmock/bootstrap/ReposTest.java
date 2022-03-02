@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Component
+//@Component
 @RequiredArgsConstructor
 public class ReposTest implements CommandLineRunner {
 
@@ -37,7 +37,7 @@ public class ReposTest implements CommandLineRunner {
 
         taskRepository.saveAll(List.of(task1, task2));
 
-//        System.out.println(taskRepository.findByUserId("621b86621e1b3b14501f029f"));
+//        System.out.println("find by user:" + taskRepository.findByUserId("621b86621e1b3b14501f029f"));
 //
 //        mongoTemplate.discardTask("621a95f6aea0f21c381650d4", "621b86621e1b3b14501f029f");
 //
