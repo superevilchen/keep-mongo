@@ -32,8 +32,8 @@ public class ReposTest implements CommandLineRunner {
         Label label2 = new Label("kkkff", Color.CRIMSON);
 
 
-        Task task1 = Task.builder().id("621a95f6aea0f21c381650d4").isArchived(true).label(label1).text("amamama").user(user1).dueDate(LocalDateTime.of(2022, 12, 1 ,22, 00)).build();
-        Task task2 = Task.builder().text("tsk2").user(user1).isDiscarded(true).label(label2).dueDate(LocalDateTime.of(2023, 1, 17, 19, 30)).build();
+        Task task1 = Task.builder().id("621a95f6aea0f21c381650d4").isArchived(true).label(label1).text("amamama").user(user1).dueDate(LocalDateTime.of(2022, 12, 1 ,22, 00)).addedAt(LocalDateTime.now()).build();
+        Task task2 = Task.builder().text("tsk2").user(user1).isDiscarded(true).label(label2).dueDate(LocalDateTime.of(2023, 1, 17, 19, 30)).addedAt(LocalDateTime.now()).build();
 
         taskRepository.saveAll(List.of(task1, task2));
 

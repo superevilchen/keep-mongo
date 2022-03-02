@@ -8,6 +8,7 @@ public enum ExceptionState {
     NOT_FOUND("couldn't get what you're looking for"),
     ALREADY_EXISTS("you're attempting to override something"),
     LOGIN_FAILED("Couldn't login"),
+    INVALID_FIELD("..df..f.d"),
     INVALID_DATE("invalid date......."),
     INVALID_TEXT("invalid text......");
 

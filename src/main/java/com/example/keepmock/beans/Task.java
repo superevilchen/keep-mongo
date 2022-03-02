@@ -9,11 +9,14 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.config.EnableMongoAuditing;
+import org.springframework.data.mongodb.core.index.IndexDirection;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 
-@Document
+@Document(value="tasks")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -27,7 +30,9 @@ public class Task {
 
     private LocalDateTime dueDate;
 
-    @CreatedDate
+//    @CreatedDate
+//    @Column(updatable=false)
+    @Indexed(direction= IndexDirection.ASCENDING)
     // add un updatable
     private LocalDateTime addedAt;
 
@@ -38,13 +43,13 @@ public class Task {
 
     private String picture;
 
-    // non updateable
     private boolean isArchived;
 
-    // non upddatble
     private boolean isDiscarded;
 
 //    @CreatedBy
+//    @DBRef(db="users")
+    // un updatable
     private User user;
 
     public Task(String text, LocalDateTime dueDate, LocalDateTime addedAt, Label label, String picture, boolean isArchived, boolean isDiscarded, User user) {

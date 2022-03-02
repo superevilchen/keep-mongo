@@ -13,8 +13,6 @@ public interface TaskRepository extends MongoRepository<Task, String> {
 
     List<Task> findByUserId(String UserID);
 
-    Optional<Task> findByIdAndUserId(String taskID, String userID);
-
     List<Task> findByDueDateGreaterThanAndUserId(LocalDateTime date, String userID);
 
     List<Task> findByDueDateLessThanAndUserId(LocalDateTime date, String userID);

@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
-@Document
+@Document(value="users")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -29,3 +29,6 @@ public class User {
         this(null, email, password);
     }
 }
+
+// @DBRef
+// private List<Task> tasks;
