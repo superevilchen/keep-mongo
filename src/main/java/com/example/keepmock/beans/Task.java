@@ -48,8 +48,8 @@ public class Task {
     private boolean isDiscarded;
 
 //    @CreatedBy
-//    @DBRef(db="users")
-    // un updatable
+    @DBRef(db="users")
+//    // un updatable
     private User user;
 
     public Task(String text, LocalDateTime dueDate, LocalDateTime addedAt, Label label, String picture, boolean isArchived, boolean isDiscarded, User user) {

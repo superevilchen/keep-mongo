@@ -1,61 +1,63 @@
-2022-03-02 17:08:17.351  INFO 21114 --- [main] c.example.keepmock.KeepmockApplication   : Starting KeepmockApplication using Java 11.0.12 on h-MBP-sl-Chen.lan with PID 21114 (/Users/chenvarsano/Downloads/keepmock/target/classes started by chenvarsano in /Users/chenvarsano/Downloads/keepmock)
-2022-03-02 17:08:17.357  INFO 21114 --- [main] c.example.keepmock.KeepmockApplication   : No active profile set, falling back to 1 default profile: "default"
-2022-03-02 17:08:21.227  INFO 21114 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-02 17:08:21.337  INFO 21114 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 2 MongoDB repository interfaces.
-2022-03-02 17:08:22.482  INFO 21114 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-03-02 17:08:22.501  INFO 21114 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-02 17:08:22.502  INFO 21114 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-03-02 17:08:22.761  INFO 21114 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-02 17:08:22.762  INFO 21114 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5244 ms
-2022-03-02 17:08:23.211  INFO 21114 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-02 17:08:23.412  INFO 21114 --- [cluster-rtt-ClusterId{value='621f8867f87dfc7864a395fc', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:75}] to localhost:27017
-2022-03-02 17:08:23.412  INFO 21114 --- [cluster-ClusterId{value='621f8867f87dfc7864a395fc', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:76}] to localhost:27017
-2022-03-02 17:08:23.416  INFO 21114 --- [cluster-ClusterId{value='621f8867f87dfc7864a395fc', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=38906703}
-2022-03-02 17:08:24.426  INFO 21114 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:77}] to localhost:27017
-2022-03-02 17:08:26.460  INFO 21114 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-03-02 17:08:27.325  INFO 21114 --- [main] c.example.keepmock.KeepmockApplication   : Started KeepmockApplication in 12.61 seconds (JVM running for 14.334)
-2022-03-02 17:08:27.500  INFO 21114 --- [main] ConditionEvaluationReportLoggingListener : 
+2022-03-05 12:45:24.326  INFO 33896 --- [main] c.example.keepmock.KeepmockApplication   : Starting KeepmockApplication using Java 11.0.12 on h-MBP-sl-Chen.lan with PID 33896 (/Users/chenvarsano/Downloads/keepmock/target/classes started by chenvarsano in /Users/chenvarsano/Downloads/keepmock)
+2022-03-05 12:45:24.380  INFO 33896 --- [main] c.example.keepmock.KeepmockApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-03-05 12:45:29.293  INFO 33896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-05 12:45:29.551  INFO 33896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 247 ms. Found 2 MongoDB repository interfaces.
+2022-03-05 12:45:31.789  INFO 33896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-05 12:45:31.823  INFO 33896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-05 12:45:31.823  INFO 33896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-05 12:45:32.166  INFO 33896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-05 12:45:32.167  INFO 33896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7646 ms
+2022-03-05 12:45:33.266  INFO 33896 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-05 12:45:33.734  INFO 33896 --- [cluster-ClusterId{value='62233f4df7d08a00074f02a1', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2022-03-05 12:45:33.734  INFO 33896 --- [cluster-rtt-ClusterId{value='62233f4df7d08a00074f02a1', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:9}] to localhost:27017
+2022-03-05 12:45:33.737  INFO 33896 --- [cluster-ClusterId{value='62233f4df7d08a00074f02a1', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=150694428}
+2022-03-05 12:45:35.092  INFO 33896 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:10}] to localhost:27017
+2022-03-05 12:45:36.240  INFO 33896 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-03-02 17:08:27.606 ERROR 21114 --- [main] o.s.boot.SpringApplication               : Application run failed
+Using generated security password: f640292d-28a4-49e4-9fed-5fe28c6529a6
 
-java.lang.IllegalStateException: Failed to execute CommandLineRunner
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:780) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.4.jar:2.6.4]
-	at com.example.keepmock.KeepmockApplication.main(KeepmockApplication.java:12) ~[classes/:na]
-Caused by: com.example.keepmock.exceptions.CustomException: null
-	at com.example.keepmock.services.impls.TaskServiceImpl.lambda$addTask$0(TaskServiceImpl.java:42) ~[classes/:na]
-	at com.example.keepmock.utils.ValidationUtils.validate(ServiceUtils.java:14) ~[classes/:na]
-	at com.example.keepmock.services.impls.TaskServiceImpl.addTask(TaskServiceImpl.java:42) ~[classes/:na]
-	at com.example.keepmock.bootstrap.ServicesTest.run(ServicesTest.java:37) ~[classes/:na]
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777) ~[spring-boot-2.6.4.jar:2.6.4]
-	... 5 common frames omitted
+2022-03-05 12:45:36.424  INFO 33896 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-03-05 12:45:36.595  INFO 33896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-05 12:45:36.967  INFO 33896 --- [main] c.example.keepmock.KeepmockApplication   : Started KeepmockApplication in 15.722 seconds (JVM running for 17.402)
+2022-03-05 12:48:20.758  INFO 33917 --- [main] c.example.keepmock.KeepmockApplication   : Starting KeepmockApplication using Java 11.0.12 on h-MBP-sl-Chen.lan with PID 33917 (/Users/chenvarsano/Downloads/keepmock/target/classes started by chenvarsano in /Users/chenvarsano/Downloads/keepmock)
+2022-03-05 12:48:20.765  INFO 33917 --- [main] c.example.keepmock.KeepmockApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-03-05 12:48:22.375  INFO 33917 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-05 12:48:22.436  INFO 33917 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 MongoDB repository interfaces.
+2022-03-05 12:48:23.256  INFO 33917 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-05 12:48:23.273  INFO 33917 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-05 12:48:23.273  INFO 33917 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-05 12:48:23.372  INFO 33917 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-05 12:48:23.373  INFO 33917 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2462 ms
+2022-03-05 12:48:23.668  INFO 33917 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-05 12:48:23.768  INFO 33917 --- [cluster-rtt-ClusterId{value='62233ff7da524b1e1bc5cb60', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:12}] to localhost:27017
+2022-03-05 12:48:23.769  INFO 33917 --- [cluster-ClusterId{value='62233ff7da524b1e1bc5cb60', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:11}] to localhost:27017
+2022-03-05 12:48:23.771  INFO 33917 --- [cluster-ClusterId{value='62233ff7da524b1e1bc5cb60', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=36373236}
+2022-03-05 12:48:24.263  INFO 33917 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:13}] to localhost:27017
+2022-03-05 12:48:25.206  INFO 33917 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-2022-03-02 17:09:20.761  INFO 21125 --- [main] c.example.keepmock.KeepmockApplication   : Starting KeepmockApplication using Java 11.0.12 on h-MBP-sl-Chen.lan with PID 21125 (/Users/chenvarsano/Downloads/keepmock/target/classes started by chenvarsano in /Users/chenvarsano/Downloads/keepmock)
-2022-03-02 17:09:20.769  INFO 21125 --- [main] c.example.keepmock.KeepmockApplication   : No active profile set, falling back to 1 default profile: "default"
-2022-03-02 17:09:22.681  INFO 21125 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-02 17:09:22.763  INFO 21125 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 2 MongoDB repository interfaces.
-2022-03-02 17:09:24.123  INFO 21125 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-03-02 17:09:24.151  INFO 21125 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-02 17:09:24.151  INFO 21125 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-03-02 17:09:24.329  INFO 21125 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-02 17:09:24.330  INFO 21125 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3388 ms
-2022-03-02 17:09:24.662  INFO 21125 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-02 17:09:24.844  INFO 21125 --- [cluster-rtt-ClusterId{value='621f88a4de0b3b2ddaac276a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:79}] to localhost:27017
-2022-03-02 17:09:24.844  INFO 21125 --- [cluster-ClusterId{value='621f88a4de0b3b2ddaac276a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:78}] to localhost:27017
-2022-03-02 17:09:24.847  INFO 21125 --- [cluster-ClusterId{value='621f88a4de0b3b2ddaac276a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=33023135}
-2022-03-02 17:09:25.725  INFO 21125 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:80}] to localhost:27017
-2022-03-02 17:09:26.753  INFO 21125 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-03-02 17:09:27.341  INFO 21125 --- [main] c.example.keepmock.KeepmockApplication   : Started KeepmockApplication in 7.887 seconds (JVM running for 8.992)
-2022-03-02 17:09:59.133  INFO 21125 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-02 17:09:59.133  INFO 21125 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-02 17:09:59.135  INFO 21125 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-03-02 17:16:22.332  WARN 21125 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value '2022-03-02T15:16:04.224Z'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2022-03-02T15:16:04.224Z]]
-2022-03-02 17:16:24.158  WARN 21125 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value '2022-03-02T15:16:04.224Z'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2022-03-02T15:16:04.224Z]]
-2022-03-02 17:16:56.642  WARN 21125 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value '2022-03-02T15:16:04Z'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2022-03-02T15:16:04Z]]
-2022-03-02 17:18:24.330  WARN 21125 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'taskID' for method parameter type String is not present]
-2022-03-02 17:18:26.034  WARN 21125 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'taskID' for method parameter type String is not present]
-2022-03-02 18:21:49.417  WARN 21125 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'com.example.keepmock.beans.Label'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.example.keepmock.beans.Label': no matching editors or conversion strategy found]
+Using generated security password: 49e536a8-ae18-4ef4-bf19-b0fb5f221413
+
+2022-03-05 12:48:25.367  INFO 33917 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-03-05 12:48:25.515  INFO 33917 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-05 12:48:25.911  INFO 33917 --- [main] c.example.keepmock.KeepmockApplication   : Started KeepmockApplication in 6.237 seconds (JVM running for 7.117)
+2022-03-05 12:51:42.660  INFO 33935 --- [main] c.example.keepmock.KeepmockApplication   : Starting KeepmockApplication using Java 11.0.12 on h-MBP-sl-Chen.lan with PID 33935 (/Users/chenvarsano/Downloads/keepmock/target/classes started by chenvarsano in /Users/chenvarsano/Downloads/keepmock)
+2022-03-05 12:51:42.671  INFO 33935 --- [main] c.example.keepmock.KeepmockApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-03-05 12:51:44.277  INFO 33935 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-05 12:51:44.360  INFO 33935 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 2 MongoDB repository interfaces.
+2022-03-05 12:51:45.239  INFO 33935 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-05 12:51:45.254  INFO 33935 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-05 12:51:45.254  INFO 33935 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-05 12:51:45.352  INFO 33935 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-05 12:51:45.353  INFO 33935 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2578 ms
+2022-03-05 12:51:45.583  INFO 33935 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-05 12:51:45.683  INFO 33935 --- [cluster-rtt-ClusterId{value='622340c1b8ac5b5e391a4747', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:14}] to localhost:27017
+2022-03-05 12:51:45.689  INFO 33935 --- [cluster-ClusterId{value='622340c1b8ac5b5e391a4747', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:15}] to localhost:27017
+2022-03-05 12:51:45.699  INFO 33935 --- [cluster-ClusterId{value='622340c1b8ac5b5e391a4747', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=36135473}
+2022-03-05 12:51:46.137  INFO 33935 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:16}] to localhost:27017
+2022-03-05 12:51:47.117  INFO 33935 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d0309e18-03b4-469f-9d96-4b201bb9642b
+
+2022-03-05 12:51:47.306  INFO 33935 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-03-05 12:51:47.472  INFO 33935 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-05 12:51:47.936  INFO 33935 --- [main] c.example.keepmock.KeepmockApplication   : Started KeepmockApplication in 6.494 seconds (JVM running for 7.404)

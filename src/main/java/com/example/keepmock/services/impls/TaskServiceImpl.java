@@ -9,6 +9,7 @@ import com.example.keepmock.repos.UserRepository;
 import com.example.keepmock.services.TaskService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Sort;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,13 +27,16 @@ public class TaskServiceImpl implements TaskService {
     private final TaskRepository taskRepository;
     private final UserRepository userRepository;
     private final MongoTemplateImpl mongoTemplateImpl;
+    private final BCryptPasswordEncoder passwordEncoder;
 
-//    @Override
-//    public boolean login(String email, String password) throws CustomException {
-//
-//        userRepository.findByEmailAndPassword(email, password).orElseThrow(() -> new CustomException(LOGIN_FAILED));
-//        return true;
-//    }
+    @Override
+    public boolean login(String email, String password) throws CustomException {
+
+        String encryptedPassword = passwordEncoder.encode(password);
+
+        userRepository.findByEmailAndPassword(email, encryptedPassword).orElseThrow(() -> new CustomException(LOGIN_FAILED));
+        return true;
+    }
 
     @Override
     public void addTask(Task task) throws CustomException {

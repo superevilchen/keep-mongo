@@ -7,6 +7,7 @@ import com.example.keepmock.beans.User;
 import com.example.keepmock.exceptions.CustomException;
 import com.example.keepmock.repos.UserRepository;
 import com.example.keepmock.services.TaskService;
+import com.example.keepmock.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
@@ -19,23 +20,30 @@ import java.time.LocalDateTime;
 public class ServicesTest implements CommandLineRunner {
 
     private final TaskService taskService;
-    private final UserRepository userRepository;
+    private final UserService userService;
 
     @Override
     public void run(String... args) throws Exception {
 
         User user1 = User.builder().id("621b86621e1b3b14501f029f").email("matan@gmail.com").password("12345").build();
+        User user2 = User.builder().id("123").email("shalvadahan@gmail.com").password("12345").build();
 
         Label label1 = new Label("family", Color.BLUE);
         Label label2 = new Label("kkkff", Color.CRIMSON);
 
         Task task1 = Task.builder().id("621a95f6aea0f21c381650d4").isArchived(true).label(label1).text("amamama").user(user1).dueDate(LocalDateTime.of(2022, 12, 1 ,22, 00)).addedAt(LocalDateTime.now()).build();
         Task task2 = Task.builder().text("tsk2").user(user1).isDiscarded(true).label(label2).dueDate(LocalDateTime.of(2023, 1, 17, 19, 30)).addedAt(LocalDateTime.now()).build();
+        Task task3 = Task.builder().text("tsk3").user(user2).isDiscarded(true).label(label2).dueDate(LocalDateTime.of(2023, 1, 17, 19, 30)).addedAt(LocalDateTime.now()).build();
 
-        userRepository.save(user1);
+
+        userService.addUser(user1);
+        userService.addUser(user2);
+
 //        // add
         taskService.addTask(task1);
         taskService.addTask(task2);
+        taskService.addTask(task3);
+
 
 //        // update
 //        task1.setText("mamfnfr");
@@ -64,7 +72,7 @@ public class ServicesTest implements CommandLineRunner {
         System.out.println("between: " + taskService.getAllBetween(LocalDateTime.of(2022, 12, 2 ,22, 00), LocalDateTime.of(2023, 1, 16, 19, 30), "621b86621e1b3b14501f029f"));
 
         // field
-        System.out.println("all per field: " + taskService.getAllPerFieldStatus("621b86621e1b3b14501f029f", true, "isDiscarded") );
+        System.out.println("all per field: " + taskService.getAllPerFieldStatus("123", true, "isDiscarded") );
 
         // label
         System.out.println("all per label: " + taskService.getAllUnderLabel(label1, "621b86621e1b3b14501f029f"));
