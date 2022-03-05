@@ -7,7 +7,7 @@ import java.util.function.Supplier;
 
 import static com.example.keepmock.exceptions.ExceptionState.INVALID_FIELD;
 
-public class ServiceUtils {
+public class ValidationUtils {
 
     public static void validate(boolean condition, Supplier<CustomException> callback) throws CustomException {
         if (!condition) {
@@ -15,9 +15,9 @@ public class ServiceUtils {
         }
     }
 
-    public static void validateMany(List<Boolean> isExists, Supplier<CustomException> callback) throws CustomException {
-        for (Boolean b : isExists){
-            if (!b){
+    public static void validateMany(List<Boolean> conditions, Supplier<CustomException> callback) throws CustomException {
+        for (Boolean isTrue : conditions){
+            if (!isTrue){
                 throw callback.get();
             }
         }

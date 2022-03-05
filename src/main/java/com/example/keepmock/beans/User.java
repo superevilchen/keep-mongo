@@ -12,12 +12,11 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @Data
-public class User {
+public class User{
 
     @Id
     private String id;
 
-//    @Indexed(unique = true)
     private String email;
 
     private String password;

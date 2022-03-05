@@ -1,4 +1,4 @@
-package com.example.keepmock.services;
+package com.example.keepmock.services.impls;
 
 import com.example.keepmock.beans.Label;
 import com.example.keepmock.beans.Task;
@@ -6,6 +6,7 @@ import com.example.keepmock.exceptions.CustomException;
 import com.example.keepmock.repos.MongoTemplateImpl;
 import com.example.keepmock.repos.TaskRepository;
 import com.example.keepmock.repos.UserRepository;
+import com.example.keepmock.services.TaskService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
@@ -16,11 +17,11 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import static com.example.keepmock.exceptions.ExceptionState.*;
-import static com.example.keepmock.utils.ServiceUtils.*;
+import static com.example.keepmock.utils.ValidationUtils.*;
 
 @Service
 @RequiredArgsConstructor
-public class TaskServiceImpl implements TaskService{
+public class TaskServiceImpl implements TaskService {
 
     private final TaskRepository taskRepository;
     private final UserRepository userRepository;
@@ -55,7 +56,7 @@ public class TaskServiceImpl implements TaskService{
         fromDB.setLabel(task.getLabel());
         fromDB.setPicture(task.getPicture());
 
-        taskRepository.save(task);
+//        taskRepository.save(task);
     }
 
     @Override
@@ -94,8 +95,6 @@ public class TaskServiceImpl implements TaskService{
     // if true, asc
     // if false, desc
     public List<Task> sort(String userID, boolean isAsc, String field) throws CustomException {
-
-        // validate fields
 
         validate(userRepository.existsById(userID), () -> new CustomException(NOT_FOUND));
 
