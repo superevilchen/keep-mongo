@@ -1,8 +1,6 @@
 package com.example.keepmock.repos;
 
 import com.example.keepmock.beans.Task;
-import com.example.keepmock.exceptions.CustomException;
-import com.example.keepmock.exceptions.ExceptionState;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -14,8 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
-
-import static com.example.keepmock.exceptions.ExceptionState.INVALID_FIELD;
 
 @Repository
 @RequiredArgsConstructor
@@ -69,19 +65,5 @@ public class MongoTemplateImpl {
         query.addCriteria(Criteria.where("updatedAt").lt(LocalDateTime.now().minusMonths(2)).and("isDiscarded").is(true));
 
         mongoTemplate.findAllAndRemove(query, Task.class);
-    }
-
-    public boolean getTaskStatus(String taskID, String field) throws CustomException {
-
-        Task task = mongoTemplate.findById(taskID, Task.class);
-
-        switch (field){
-            case "isDiscarded":
-                return task.isDiscarded();
-            case "isArchived":
-                return task.isArchived();
-        }
-
-        throw new CustomException(INVALID_FIELD);
     }
 }
